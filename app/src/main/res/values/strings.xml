@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">DiyetGunlugum</string>
+    <string name="create_new_account">Kayıt Ol</string>
+    <string name="I_have_account">Hesabım Var!</string>
+    <string name="username">Kullanıcı Adı</string>
+    <string name="txtemail">Email</string>
+    <string name="email">Email</string>
+    <string name="password">Parola</string>
+    <string name="createnewaccountlower">Yeni Hesap Oluştur</string>
+    <string name="createaccount">Hesap Oluştur</string>
+    <string name="loginwithyouraccount">Hesabınızla Giriş Yapınız</string>
+    <string name="login">Giriş Yap</string>
+    <string name="register_kullanıcıadı">Register Kullanıcı Adı</string>
+    <string name="registerkullanıcıadı">Kullanıcı Adı</string>
+    <string name="usernamereg">Kullanıcı Adı</string>
+    <string name="logout">logout</string>
+
+
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainappActivity">
+
+
+   <include
+       android:id="@+id/action_bar"
+       layout="@layout/actionbarapp"
+       android:layout_width="425dp"
+       android:layout_height="0dp"
+       android:layout_marginBottom="517dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="@+id/toolbar"
+       app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+   <androidx.viewpager.widget.ViewPager
+       android:id="@+id/viewPager"
+       android:layout_width="0dp"
+       android:layout_height="670dp"
+       android:layout_marginTop="4dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="@+id/toolbar"></androidx.viewpager.widget.ViewPager>
+
+
+   <androidx.appcompat.widget.Toolbar
+       android:id="@+id/toolbar"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+
+       android:background="?attr/colorPrimary"
+       android:minHeight="?attr/actionBarSize"
+       android:theme="?attr/actionBarTheme"
+       app:layout_constraintBottom_toTopOf="@+id/action_bar"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+
+   <com.google.android.material.tabs.TabLayout
+       android:id="@+id/tabsMain"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+       android:layout_marginStart="1dp"
+       android:layout_marginEnd="1dp"
+       app:layout_constraintBottom_toBottomOf="@+id/action_bar"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/toolbar"
+       tools:ignore="MissingConstraints">
+
+      <com.google.android.material.tabs.TabItem
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Yiyecekler"
+
+          />
+
+      <com.google.android.material.tabs.TabItem
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Egzersizler" />
+
+   </com.google.android.material.tabs.TabLayout>
+
+
+   <androidx.viewpager.widget.ViewPager
+       android:id="@+id/vpMain"
+       android:layout_width="0dp"
+       android:layout_height="586dp"
+
+       android:layout_marginTop="8dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="@+id/tabsMain">
+
+
+
+
+   </androidx.viewpager.widget.ViewPager>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
